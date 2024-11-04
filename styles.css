@@ -1,0 +1,656 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure these settings allow for scrolling only on the shop page */
+html, body {
+    height: auto; /* Allow height to expand with content */
+}
+
+/* Prevent scrolling on the index page */
+.index-page {
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Style for the main content of the shop page */
+.shop-page {
+    height: auto; /* Allow height to adjust */
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding: 30px; /* Optional: add padding for aesthetics */
+}
+
+.grid-item {
+    width: 100%; /* Makes each grid item take full width */
+    overflow: hidden; /* Ensures no overflow from images */
+}
+
+/* Wrapper for centering the grid */
+.grid-container {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    padding: 30px; /* Adjust as needed */
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 30px; /* Space between images, reduce for a smaller grid */
+    max-width: 1000px; /* Adjust this value to make the grid smaller */
+    width: 100%; /* Ensures the grid doesn't exceed container width */
+    padding: 0; /* Remove internal padding */
+    margin-left: 90px; /* Adjust this value to move the grid to the right */
+    margin-top: 20px;
+}
+
+.grid-item img {
+    width: 100%; /* Forces images to take full width */
+    height: 250px; /* Adjust height for a smaller size */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border: 5px solid #e6d5b8; /* Beige border, adjust thickness and color as needed */
+    padding: 5px; /* Optional: adds some space between the image and the border */
+    background-color: #f9f0de; /* Optional: sets a background color for the border */
+}
+
+
+/* Ensure that titles and descriptions are styled correctly */
+.grid-item h3 {
+    margin-left: 70px;
+    margin-top: 5px 0; /* Adjust as needed for spacing */
+    font-size: 22px; /* Adjust size as needed */
+    color: #3C4432; /* Same color as other headings */
+}
+
+.grid-item p {
+    margin-left: 130px; /* This will now take effect */
+    font-size: 18px; /* Adjust size as needed */
+    color: #3C4432; /* Same color as other text */
+}
+
+/* General styles */
+body {
+    font-family: 'Didot', 'Playfair Display', serif; /* Use Didot if available, fallback to Playfair Display */
+    color: #6d6658;
+    background-color: #f9f0de;
+}
+
+/* Add padding to the body to create space at the bottom */
+body {
+    padding-bottom: 20px; /* Adjust this value as needed */
+}
+
+
+/* Logo styles */
+.logo {
+    text-decoration: none; /* Removes the underline */
+    color: #f9f0de; /* Changes the text color */
+    font-size: 50px; /* Adjusts font size */
+    font-weight: bold; /* Keeps it bold */
+    font-family: 'Didot', 'Playfair Display', serif; /* Keeps the same font */
+}
+
+/* Optional: Add a hover effect */
+.logo:hover {
+    color: #6d6658; /* Changes color on hover */
+}
+
+/* Top contact bar */
+.top-bar {
+    background-color: #f4e2cd;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #c98f60;
+}
+
+.top-bar a {
+    color: #3C4432; /* Use the same color as the surrounding text */
+    text-decoration: none; /* Remove the underline */
+}
+
+
+/* Header with logo and icons */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #3C4432;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: -13px; /* Add right margin to move icons */
+}
+
+.social-icons img {
+    border-radius: 5px; /* Adds rounded corners to the box */
+    width: 40px;
+    height: 40px;
+    margin-left: 7px; /* Space between icons */
+    margin-top: -30px; /* Adjust to align with your layout */
+}
+
+/* Main content */
+main {
+    display: flex;
+    padding: 0;
+    height: 100vh; /* Make main content full height */
+}
+
+.intro {
+    display: flex;
+    width: 100%; /* Full width for responsiveness */
+    gap: 30px;
+}
+
+/* Image container */
+.image-container {
+    flex: 1; /* Allow image container to expand */
+    display: flex;
+}
+
+.image-container img {
+    width: 90%; /* Full width of container */
+    height: 77.7%; /* Adjust height if needed */
+    border-radius: 0; /* Remove any border radius */
+}
+
+.text-content {
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+.text-content h1 {
+    margin-bottom: 5px !important;
+    line-height: 1.1;
+    margin-top: -50px; /* Adjust as needed */
+    margin-left: -60px;
+    font-size: 40px;
+    color: #3C4432;
+    font-family: 'Didot', 'Playfair Display', serif;
+}
+
+.text-content h2 {
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 40px;
+    color: #3C4432;
+    font-family: 'Didot', 'Playfair Display', serif;
+}
+
+.text-content p {
+    text-align: justify;
+    margin-left: -60px;
+    margin-right: 70px;
+    font-size: 15.75px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    margin-top: 22px;
+}
+
+
+.logo-image {
+    border-radius: 70px; /* Optional: rounded corners */
+    display: block;
+    width: 90px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space between the top and logo */
+    margin-left: 388px; /* Align the image to the left */
+}
+
+
+
+.shop-now {
+    display: inline-block; /* Makes the <a> behave like a button */
+    background-color: #f3d9b1;
+    color: #6d6658;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: -18px;
+    margin-left: 245px; /* Adjust as needed */
+}
+
+.shop-now:hover {
+    background-color: #e2c7a0; /* Hover effect */
+}
+
+/* Media query for devices with a max-width of 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center; /* Center items for better alignment on small screens */
+        overflow: auto; /* Allow horizontal scroll if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Add vertical scroll if content overflows */
+        max-height: 80vh; /* Limit the height so scrolling is possible */
+        margin-left: 0; /* Remove left margin */
+        padding: 10px; /* Add padding for space */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .logo-image {
+        width: 500px; /* Reduce logo size */
+        margin-top: 10px;
+    }
+
+    .social-icons img {
+        width: 40px; /* Adjust icon size */
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        color: #3C4432; /* Common color for titles */
+        line-height: 1.1;
+    }
+
+    .text-content h1 {
+        margin-left: -350px; /* Remove left margin */
+        margin-top: -50px;
+        font-size: 100px; /* Reduce font size */
+        font-family: 'Didot', 'Playfair Display', serif;
+    }
+
+    .text-content h2 {
+        margin-left: -250px;
+        margin-top: 5px;
+        font-size: 40px; /* Reduce font size */
+        font-family: 'Didot', 'Playfair Display', serif;
+    }
+
+    .text-content p {
+        text-align: justify;
+        margin: 22px -60px 15px 70px; /* Adjust margins */
+        font-size: 15.75px;
+        line-height: 1.7;
+    }
+
+    .shop-now {
+        margin: 20px auto; /* Center button */
+        padding: 15px 20px; /* Adjust padding for a smaller button */
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .image-container {
+        overflow-x: auto; /* Add horizontal scroll if needed */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image takes full width */
+    }
+
+    .top-bar {
+        font-size: 14px; /* Reduce top bar text size */
+        padding: 8px 0; /* Adjust padding */
+    }
+
+    .shop-table {
+        width: 90%; /* Make the table responsive */
+        margin: 0 auto; /* Center the table */
+        border-collapse: collapse; /* Improve border appearance */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 14px; /* Adjust font size for readability */
+        word-break: break-word; /* Ensure long text wraps */
+    }
+
+    .shop-table th {
+        font-size: 16px; /* Slightly larger text for headers */
+    }
+
+    .grid-item {
+        width: 100%; /* Full width of the container */
+        display: flex;
+        flex-direction: column; /* Stack image and info */
+        align-items: center; /* Center align */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .grid-item img {
+        width: 100%; /* Full width of the container */
+        height: 160px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Maintain aspect ratio and fill the area */
+        margin: 0; /* Remove margin */
+    }
+
+
+    .product-info {
+        text-align: center; /* Center text */
+        padding: 5px 0; /* Add some padding for spacing */
+    }
+
+    .product-info h3 {
+        font-size: 1.2em; /* Title font size */
+        margin: 5px 0; /* Space above and below title */
+    }
+
+    .product-info p {
+        font-size: 1em; /* Price font size */
+        color: #3C4432; /* Price color */
+        margin-left: 0px;
+        margin-top: -5px;
+        margin-bottom: 50px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: 15px;
+    }
+
+}
+
+/* Media query for very small devices (e.g., smartphones) */
+@media (max-width: 480px) {
+    .header-container {
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Allow vertical scrolling */
+        max-height: 70vh; /* Limit height to allow scrolling */
+    }
+
+    .logo-image {
+        width: 50px; /* Reduce size */
+        margin-left: 290px;
+        margin-top: 3px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        font-size: 32px; /* Smaller font for both titles */
+    }
+
+    .text-content h1 {
+        margin-left: -230px;
+        margin-top: -70px;
+    }
+
+    .text-content h2 {
+        margin-left: -100px;
+        margin-top: -10px;
+    }
+
+    .text-content p {
+        margin: 22px 25px 15px 0; /* Adjust margins */
+        font-size: 15.5px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .shop-now {
+        font-size: 18px; /* Smaller button font */
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 30px; /* Smaller icon size */
+        height: 30px;
+    }
+
+    .shop-table {
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center table */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 12px; /* Smaller text for small screens */
+    }
+
+    .grid-item {
+        width: 100%; /* Full width of the container */
+        display: flex;
+        flex-direction: column; /* Stack image and info */
+        align-items: center; /* Center align */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .grid-item img {
+        width: 100%; /* Full width of the container */
+        height: 160px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Maintain aspect ratio and fill the area */
+        margin: 0; /* Remove margin */
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: 15px;
+    }
+
+
+    
+    .product-info h3 {
+        font-size: 16px; /* Smaller title font size */
+        margin-top: 0px;
+        
+    }
+
+    .product-info p {
+        font-size: 14px; /* Smaller price font size */
+        margin-left: 0px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-container {
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Allow vertical scrolling */
+        max-height: 70vh; /* Limit height to allow scrolling */
+    }
+
+    .logo-image {
+        width: 50px; /* Reduce size */
+        margin-left: 270px;
+        margin-top: 3px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        font-size: 32px; /* Smaller font for both titles */
+    }
+
+    .text-content h1 {
+        margin-left: -180px;
+        margin-top: -50px;
+    }
+
+    .text-content h2 {
+        margin-left: -100px;
+        margin-top: -10px;
+    }
+
+    .text-content p {
+        margin: 22px 25px 15px 0; /* Adjust margins */
+        font-size: 15.75px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .shop-now {
+        font-size: 18px; /* Smaller button font */
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 30px; /* Smaller icon size */
+        height: 30px;
+    }
+
+    .shop-table {
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center table */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 12px; /* Smaller text for small screens */
+    }
+    
+    .grid-item {
+        width: 100%; /* Ensure the grid item takes full width */
+        padding: 0; /* Remove padding to maximize space */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align for consistency */
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center text */
+        justify-content: center; /* Center content vertically */
+        text-align: center;
+        padding: 0 5px; /* Add slight horizontal padding */
+        height: auto; /* Allow the height to adjust based on content */
+        overflow: visible; /* Ensure content is not clipped */
+    }
+
+    .product-info h3 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin-top: 0px;
+    }
+
+    .product-info p {
+        font-size: 14px; /* Adjust font size for price */
+        color: #3C4432;
+        margin: 0 0 5px; /* Simplify margins */
+        margin-bottom: -20px;
+        margin-top: -5px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .grid-item img {
+        width: 100%; /* Ensure the image takes full width */
+        height: 150px; /* Set a consistent height */
+        object-fit: cover; /* Maintain aspect ratio and avoid distortion */
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    
+    .header-container {
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Allow vertical scrolling */
+        max-height: 70vh; /* Limit height to allow scrolling */
+    }
+
+    .logo-image {
+        width: 50px; /* Reduce size */
+        margin-left: 250px;
+        margin-top: 3px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        font-size: 32px; /* Smaller font for both titles */
+    }
+
+    .text-content h1 {
+        margin-left: -170px;
+        margin-top: -50px;
+    }
+
+    .text-content h2 {
+        margin-left: -80px;
+        margin-top: -10px;
+    }
+
+    .text-content p {
+        margin: 22px 25px 15px 0; /* Adjust margins */
+        font-size: 15.75px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .shop-now {
+        font-size: 18px; /* Smaller button font */
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 30px; /* Smaller icon size */
+        height: 30px;
+    }
+
+    .shop-table {
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center table */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 12px; /* Smaller text for small screens */
+    }
+    .grid-item {
+        width: 100%; /* Full width of the container */
+        padding: 0; /* Remove padding to maximize space */
+    }
+
+    .product-info {
+        text-align: center; /* Center the text */
+        overflow: visible; /* Ensure text is not hidden */
+        padding: 0 5px; /* Add slight padding for space */
+    }
+
+    .product-info p {
+        font-size: 14px; /* Adjust font size for price */
+        color: #3C4432;
+        margin: 0 0 5px; /* Simplify margins */
+        margin-bottom: -25px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .product-info h3 {
+        font-size: 1em; /* Smaller title font size if needed */
+        margin: 0px 0; /* Adjust space between title and price */
+    }
+
+    .grid-item img {
+        width: 100%; /* Full width */
+        height: 140px; /* Reduce image height to fit more content */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+}
+
