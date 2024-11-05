@@ -250,8 +250,8 @@ main {
     }
 
     .social-icons img {
-        width: 60px; /* Adjust icon size */
-        height: 60px;
+        width: 40px; /* Adjust icon size */
+        height: 40px;
         margin-top: 5px;
     }
 
@@ -409,8 +409,8 @@ main {
     }
 
     .social-icons img {
-        width: 30px; /* Smaller icon size */
-        height: 30px;
+        width: 50px; /* Smaller icon size */
+        height: 50px;
     }
 
     .shop-table {
