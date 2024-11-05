@@ -286,6 +286,7 @@ main {
         margin: 20px auto; /* Center button */
         padding: 15px 20px; /* Adjust padding for a smaller button */
         font-size: 20px; /* Reduce font size */
+        margin-bottom: 50px !important;
     }
 
     .image-container {
