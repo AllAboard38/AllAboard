@@ -565,26 +565,26 @@ main {
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     
     .header-container {
-        overflow: auto; /* Enable scrolling if content overflows */
+        overflow: auto;
     }
 
     .text-content {
-        overflow-y: auto; /* Allow vertical scrolling */
-        max-height: 70vh; /* Limit height to allow scrolling */
+        overflow-y: auto;
+        max-height: 90vh;
     }
 
     .logo-image {
-        width: 50px; /* Reduce size */
+        width: 50px;
         margin-left: 250px;
         margin-top: 3px;
     }
 
     .text-content h1,
     .text-content h2 {
-        font-size: 32px; /* Smaller font for both titles */
+        font-size: 32px;
     }
 
     .text-content h1 {
@@ -598,25 +598,25 @@ main {
     }
 
     .text-content p {
-        margin: 22px 25px 15px 0; /* Adjust margins */
+        margin: 22px 25px 15px 0;
         font-size: 15.75px;
         line-height: 1.7;
         text-align: justify;
     }
 
     .shop-now {
-        font-size: 18px; /* Smaller button font */
+        font-size: 18px;
         margin-bottom: 20px;
     }
 
     .social-icons img {
-        width: 40px; /* Smaller icon size */
+        width: 40px;
         height: 40px;
     }
 
     .shop-table {
-        width: 100%; /* Full width */
-        margin: 0 auto; /* Center table */
+        width: 100%; 
+        margin: 0 auto;
     }
 
     .shop-table th,
