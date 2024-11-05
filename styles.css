@@ -228,6 +228,141 @@ main {
     background-color: #e2c7a0; /* Hover effect */
 }
 
+/* Media query for devices with a max-width of 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center; /* Center items for better alignment on small screens */
+        overflow: auto; /* Allow horizontal scroll if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Add vertical scroll if content overflows */
+        max-height: 80vh; /* Limit the height so scrolling is possible */
+        margin-left: 0; /* Remove left margin */
+        padding: 10px; /* Add padding for space */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .logo-image {
+        width: 500px; /* Reduce logo size */
+        margin-top: 10px;
+    }
+
+    .social-icons img {
+        width: 40px; /* Adjust icon size */
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        color: #3C4432; /* Common color for titles */
+        line-height: 1.1;
+    }
+
+    .text-content h1 {
+        margin-left: -350px; /* Remove left margin */
+        margin-top: -50px;
+        font-size: 100px; /* Reduce font size */
+        font-family: 'Didot', 'Playfair Display', serif;
+    }
+
+    .text-content h2 {
+        margin-left: -250px;
+        margin-top: 5px;
+        font-size: 40px; /* Reduce font size */
+        font-family: 'Didot', 'Playfair Display', serif;
+    }
+
+    .text-content p {
+        text-align: justify;
+        margin: 22px -60px 15px 70px; /* Adjust margins */
+        font-size: 15.75px;
+        line-height: 1.7;
+    }
+
+    .shop-now {
+        margin: 20px auto; /* Center button */
+        padding: 15px 20px; /* Adjust padding for a smaller button */
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .image-container {
+        overflow-x: auto; /* Add horizontal scroll if needed */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image takes full width */
+    }
+
+    .top-bar {
+        font-size: 14px; /* Reduce top bar text size */
+        padding: 8px 0; /* Adjust padding */
+    }
+
+    .shop-table {
+        width: 90%; /* Make the table responsive */
+        margin: 0 auto; /* Center the table */
+        border-collapse: collapse; /* Improve border appearance */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 14px; /* Adjust font size for readability */
+        word-break: break-word; /* Ensure long text wraps */
+    }
+
+    .shop-table th {
+        font-size: 16px; /* Slightly larger text for headers */
+    }
+
+    .grid-item {
+        width: 100%; /* Full width of the container */
+        display: flex;
+        flex-direction: column; /* Stack image and info */
+        align-items: center; /* Center align */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .grid-item img {
+        width: 100%; /* Full width of the container */
+        height: 160px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Maintain aspect ratio and fill the area */
+        margin: 0; /* Remove margin */
+    }
+
+
+    .product-info {
+        text-align: center; /* Center text */
+        padding: 5px 0; /* Add some padding for spacing */
+    }
+
+    .product-info h3 {
+        font-size: 1.2em; /* Title font size */
+        margin: 5px 0; /* Space above and below title */
+    }
+
+    .product-info p {
+        font-size: 1em; /* Price font size */
+        color: #3C4432; /* Price color */
+        margin-left: 0px;
+        margin-top: -5px;
+        margin-bottom: 50px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: 15px;
+    }
+
+}
+
 /* Media query for very small devices (e.g., smartphones) */
 @media (max-width: 480px) {
     .header-container {
@@ -269,7 +404,7 @@ main {
 
     .shop-now {
         font-size: 18px; /* Smaller button font */
-        margin-bottom: 50px !important;
+        margin-bottom: 20px;
     }
 
     .social-icons img {
@@ -367,7 +502,7 @@ main {
 
     .shop-now {
         font-size: 18px; /* Smaller button font */
-        margin-bottom: 50px !important;
+        margin-bottom: 20px;
     }
 
     .social-icons img {
@@ -470,7 +605,7 @@ main {
 
     .shop-now {
         font-size: 18px; /* Smaller button font */
-        margin-bottom: 50px !important;
+        margin-bottom: 20px;
     }
 
     .social-icons img {
@@ -518,3 +653,5 @@ main {
         object-fit: cover; /* Maintain aspect ratio */
     }
 }
+
+
