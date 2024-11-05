@@ -232,426 +232,163 @@ main {
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        align-items: center; /* Center items for better alignment on small screens */
-        overflow: auto; /* Allow horizontal scroll if content overflows */
+        align-items: center;
+        overflow: auto;
     }
 
     .text-content {
-        overflow-y: auto; /* Add vertical scroll if content overflows */
-        max-height: 80vh; /* Limit the height so scrolling is possible */
-        margin-left: 0; /* Remove left margin */
-        padding: 10px; /* Add padding for space */
-        text-align: center; /* Center text for better readability */
+        overflow-y: auto;
+        max-height: 80vh;
+        margin-left: 0;
+        padding: 10px;
+        text-align: center;
     }
 
     .logo-image {
-        width: 500px; /* Reduce logo size */
+        width: 500px;
         margin-top: 10px;
     }
 
     .social-icons img {
-        width: 40px; /* Adjust icon size */
+        width: 40px;
         height: 40px;
         margin-top: 5px;
     }
 
     .text-content h1,
     .text-content h2 {
-        color: #3C4432; /* Common color for titles */
+        color: #3C4432;
         line-height: 1.1;
     }
 
     .text-content h1 {
-        margin-left: -350px; /* Remove left margin */
+        margin-left: -350px;
         margin-top: -50px;
-        font-size: 100px; /* Reduce font size */
+        font-size: 100px;
         font-family: 'Didot', 'Playfair Display', serif;
     }
 
     .text-content h2 {
         margin-left: -250px;
         margin-top: 5px;
-        font-size: 40px; /* Reduce font size */
+        font-size: 40px;
         font-family: 'Didot', 'Playfair Display', serif;
     }
 
     .text-content p {
-        text-align: justify;
-        margin: 22px -60px 15px 70px; /* Adjust margins */
-        font-size: 14.5px;
+        margin: 22px -60px 15px 70px;
+        font-size: 15.75px;
         line-height: 1.7;
     }
 
     .shop-now {
-        margin: 20px auto; /* Center button */
-        padding: 15px 20px; /* Adjust padding for a smaller button */
-        font-size: 20px; /* Reduce font size */
-        margin-bottom: 50px;
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+
+    .main-container {
+        padding-bottom: 80px; /* Extra bottom space */
     }
 
     .image-container {
-        overflow-x: auto; /* Add horizontal scroll if needed */
+        overflow-x: auto;
     }
 
     .image-container img {
-        width: 100%; /* Ensure image takes full width */
+        width: 100%;
     }
 
     .top-bar {
-        font-size: 14px; /* Reduce top bar text size */
-        padding: 8px 0; /* Adjust padding */
+        font-size: 14px;
+        padding: 8px 0;
     }
 
     .shop-table {
-        width: 90%; /* Make the table responsive */
-        margin: 0 auto; /* Center the table */
-        border-collapse: collapse; /* Improve border appearance */
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
     }
 
     .shop-table th,
     .shop-table td {
-        padding: 0; /* Reduce padding */
-        font-size: 14px; /* Adjust font size for readability */
-        word-break: break-word; /* Ensure long text wraps */
+        padding: 0;
+        font-size: 14px;
+        word-break: break-word;
     }
 
     .shop-table th {
-        font-size: 16px; /* Slightly larger text for headers */
+        font-size: 16px;
     }
 
     .grid-item {
-        width: 100%; /* Full width of the container */
+        width: 100%;
         display: flex;
-        flex-direction: column; /* Stack image and info */
-        align-items: center; /* Center align */
-        overflow: hidden; /* Prevent overflow */
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
     }
 
     .grid-item img {
-        width: 100%; /* Full width of the container */
-        height: 160px; /* Set a fixed height for uniformity */
-        object-fit: cover; /* Maintain aspect ratio and fill the area */
-        margin: 0; /* Remove margin */
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        margin: 0;
     }
 
-
     .product-info {
-        text-align: center; /* Center text */
-        padding: 5px 0; /* Add some padding for spacing */
+        text-align: center;
+        padding: 5px 0;
     }
 
     .product-info h3 {
-        font-size: 1.2em; /* Title font size */
-        margin: 5px 0; /* Space above and below title */
+        font-size: 1.2em;
+        margin: 5px 0;
     }
 
     .product-info p {
-        font-size: 1em; /* Price font size */
-        color: #3C4432; /* Price color */
-        margin-left: 0px;
-        margin-top: -5px;
+        font-size: 1em;
+        color: #3C4432;
         margin-bottom: 50px;
     }
 
     .image-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
-        gap: 0px; /* Adjust gap between items */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
         padding: 10px;
-        margin: 0 auto; /* Center the grid */
+        margin: 0 auto;
         margin-bottom: 15px;
     }
-
 }
 
 /* Media query for very small devices (e.g., smartphones) */
 @media (max-width: 480px) {
-    .header-container {
-        overflow: auto; /* Enable scrolling if content overflows */
-    }
-
-    .text-content {
-        overflow-y: auto; /* Allow vertical scrolling */
-        max-height: 70vh; /* Limit height to allow scrolling */
-    }
-
-    .logo-image {
-        width: 50px; /* Reduce size */
-        margin-left: 290px;
-        margin-top: 3px;
-    }
-
-    .text-content h1,
-    .text-content h2 {
-        font-size: 32px; /* Smaller font for both titles */
-    }
-
-    .text-content h1 {
-        margin-left: -230px;
-        margin-top: -70px;
-    }
-
-    .text-content h2 {
-        margin-left: -100px;
-        margin-top: -10px;
-    }
-
-    .text-content p {
-        margin: 22px 25px 15px 0; /* Adjust margins */
-        font-size: 14.5px;
-        line-height: 1.7;
-        text-align: justify;
-    }
-
-    .shop-now {
-        font-size: 18px; /* Smaller button font */
-        margin-bottom: 20px;
-    }
-
-    .social-icons img {
-        width: 30px; /* Smaller icon size */
-        height: 30px;
-    }
-
-    .shop-table {
-        width: 100%; /* Full width */
-        margin: 0 auto; /* Center table */
-    }
-
-    .shop-table th,
-    .shop-table td {
-        padding: 0; /* Reduce padding */
-        font-size: 12px; /* Smaller text for small screens */
-    }
-
-    .grid-item {
-        width: 100%; /* Full width of the container */
-        display: flex;
-        flex-direction: column; /* Stack image and info */
-        align-items: center; /* Center align */
-        overflow: hidden; /* Prevent overflow */
+    .main-container {
+        padding-bottom: 80px; /* Extra bottom space */
     }
 
     .grid-item img {
-        width: 100%; /* Full width of the container */
-        height: 160px; /* Set a fixed height for uniformity */
-        object-fit: cover; /* Maintain aspect ratio and fill the area */
-        margin: 0; /* Remove margin */
-    }
-
-    .image-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
-        gap: 0px; /* Adjust gap between items */
-        padding: 10px;
-        margin: 0 auto; /* Center the grid */
-        margin-bottom: 15px;
-    }
-
-
-    
-    .product-info h3 {
-        font-size: 16px; /* Smaller title font size */
-        margin-top: 0px;
-        
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        margin: 0;
     }
 
     .product-info p {
-        font-size: 14px; /* Smaller price font size */
-        margin-left: 0px;
-        margin-bottom: 80px;
+        margin-bottom: 80px; /* Extra margin to create space */
     }
 }
 
-@media (max-width: 380px) {
-    .header-container {
-        overflow: auto; /* Enable scrolling if content overflows */
-    }
-
-    .text-content {
-        overflow-y: auto; /* Allow vertical scrolling */
-        max-height: 70vh; /* Limit height to allow scrolling */
-    }
-
-    .logo-image {
-        width: 50px; /* Reduce size */
-        margin-left: 270px;
-        margin-top: 3px;
-    }
-
-    .text-content h1,
-    .text-content h2 {
-        font-size: 32px; /* Smaller font for both titles */
-    }
-
-    .text-content h1 {
-        margin-left: -180px;
-        margin-top: -50px;
-    }
-
-    .text-content h2 {
-        margin-left: -100px;
-        margin-top: -10px;
-    }
-
-    .text-content p {
-        margin: 22px 25px 15px 0; /* Adjust margins */
-        font-size: 14.5px;
-        line-height: 1.7;
-        text-align: justify;
-    }
-
-    .shop-now {
-        font-size: 18px; /* Smaller button font */
-        margin-bottom: 50px;
-    }
-
-    .social-icons img {
-        width: 30px; /* Smaller icon size */
-        height: 30px;
-    }
-
-    .shop-table {
-        width: 100%; /* Full width */
-        margin: 0 auto; /* Center table */
-    }
-
-    .shop-table th,
-    .shop-table td {
-        padding: 0; /* Reduce padding */
-        font-size: 12px; /* Smaller text for small screens */
-    }
-    
-    .grid-item {
-        width: 100%; /* Ensure the grid item takes full width */
-        padding: 0; /* Remove padding to maximize space */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center align for consistency */
-    }
-
-    .product-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center text */
-        justify-content: center; /* Center content vertically */
-        text-align: center;
-        padding: 0 5px; /* Add slight horizontal padding */
-        height: auto; /* Allow the height to adjust based on content */
-        overflow: visible; /* Ensure content is not clipped */
-    }
-
-    .product-info h3 {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        margin-top: 0px;
-    }
-
-    .product-info p {
-        font-size: 14px; /* Adjust font size for price */
-        color: #3C4432;
-        margin: 0 0 5px; /* Simplify margins */
-        margin-bottom: -20px;
-        margin-top: -5px;
-        white-space: nowrap; /* Prevent text wrapping */
-    }
-
-    .grid-item img {
-        width: 100%; /* Ensure the image takes full width */
-        height: 150px; /* Set a consistent height */
-        object-fit: cover; /* Maintain aspect ratio and avoid distortion */
-    }
-}
-
-
-
-
+/* Media query for smaller devices with even tighter space (e.g., 360px) */
 @media (max-width: 360px) {
-    
-    .header-container {
-        overflow: auto; /* Enable scrolling if content overflows */
-    }
-
-    .text-content {
-        overflow-y: auto; /* Allow vertical scrolling */
-        max-height: 70vh; /* Limit height to allow scrolling */
-    }
-
-    .logo-image {
-        width: 50px; /* Reduce size */
-        margin-left: 250px;
-        margin-top: 3px;
-    }
-
-    .text-content h1,
-    .text-content h2 {
-        font-size: 32px; /* Smaller font for both titles */
-    }
-
-    .text-content h1 {
-        margin-left: -170px;
-        margin-top: -50px;
-    }
-
-    .text-content h2 {
-        margin-left: -80px;
-        margin-top: -10px;
-    }
-
-    .text-content p {
-        margin: 22px 25px 15px 0; /* Adjust margins */
-        font-size: 14.5px;
-        line-height: 1.7;
-        text-align: justify;
-    }
-
-    .shop-now {
-        font-size: 18px; /* Smaller button font */
-        margin-bottom: 20px;
-    }
-
-    .social-icons img {
-        width: 30px; /* Smaller icon size */
-        height: 30px;
-    }
-
-    .shop-table {
-        width: 100%; /* Full width */
-        margin: 0 auto; /* Center table */
-    }
-
-    .shop-table th,
-    .shop-table td {
-        padding: 0; /* Reduce padding */
-        font-size: 12px; /* Smaller text for small screens */
-    }
-    .grid-item {
-        width: 100%; /* Full width of the container */
-        padding: 0; /* Remove padding to maximize space */
-    }
-
-    .product-info {
-        text-align: center; /* Center the text */
-        overflow: visible; /* Ensure text is not hidden */
-        padding: 0 5px; /* Add slight padding for space */
-    }
-
-    .product-info p {
-        font-size: 14px; /* Adjust font size for price */
-        color: #3C4432;
-        margin: 0 0 5px; /* Simplify margins */
-        margin-bottom: -25px;
-        white-space: nowrap; /* Prevent text wrapping */
-    }
-
-    .product-info h3 {
-        font-size: 1em; /* Smaller title font size if needed */
-        margin: 0px 0; /* Adjust space between title and price */
+    .main-container {
+        padding-bottom: 80px; /* Extra bottom space */
     }
 
     .grid-item img {
-        width: 100%; /* Full width */
-        height: 140px; /* Reduce image height to fit more content */
-        object-fit: cover; /* Maintain aspect ratio */
+        height: 140px;
     }
 }
+
 
