@@ -1,22 +1,18 @@
-/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure these settings allow for scrolling only on the shop page */
 html, body {
-    height: auto; /* Allow height to expand with content */
+    height: auto;
 }
 
-/* Prevent scrolling on the index page */
 .index-page {
-    height: 100vh; /* Full height of the viewport */
-    overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Style for the main content of the shop page */
 .shop-page {
     height: auto; /* Allow height to adjust */
     overflow-y: auto; /* Allow vertical scrolling */
@@ -28,23 +24,22 @@ html, body {
     overflow: hidden; /* Ensures no overflow from images */
 }
 
-/* Wrapper for centering the grid */
 .grid-container {
     display: flex;
-    justify-content: center; /* Center the grid horizontally */
-    padding: 30px; /* Adjust as needed */
+    justify-content: center; 
+    padding: 30px; 
 }
 
-/* Image grid styling */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    gap: 30px; /* Space between images, reduce for a smaller grid */
-    max-width: 1000px; /* Adjust this value to make the grid smaller */
-    width: 100%; /* Ensures the grid doesn't exceed container width */
-    padding: 0; /* Remove internal padding */
-    margin-left: 90px; /* Adjust this value to move the grid to the right */
+    gap: 20px; 
+    max-width: 1000px;
+    width: 100%; 
+    padding: 0; 
+    margin-left: 90px;
     margin-top: 20px;
+    margin-bottom: -1000px;
 }
 
 .grid-item img {
@@ -58,19 +53,16 @@ html, body {
     background-color: #f9f0de; /* Optional: sets a background color for the border */
 }
 
-
-/* Ensure that titles and descriptions are styled correctly */
 .grid-item h3 {
-    margin-left: 70px;
     margin-top: 5px 0; /* Adjust as needed for spacing */
-    font-size: 22px; /* Adjust size as needed */
+    font-size: 24px; /* Adjust size as needed */
     color: #3C4432; /* Same color as other headings */
 }
 
 .grid-item p {
-    margin-left: 130px; /* This will now take effect */
-    font-size: 18px; /* Adjust size as needed */
+    font-size: 20px; /* Adjust size as needed */
     color: #3C4432; /* Same color as other text */
+    margin-bottom: 50px;
 }
 
 /* General styles */
@@ -78,11 +70,7 @@ body {
     font-family: 'Didot', 'Playfair Display', serif; /* Use Didot if available, fallback to Playfair Display */
     color: #6d6658;
     background-color: #f9f0de;
-}
-
-/* Add padding to the body to create space at the bottom */
-body {
-    padding-bottom: 20px; /* Adjust this value as needed */
+    padding-bottom: 50px; /* Adjust this value as needed */
 }
 
 
@@ -228,7 +216,6 @@ main {
     background-color: #e2c7a0; /* Hover effect */
 }
 
-/* Media query for devices with a max-width of 768px (e.g., tablets and smartphones) */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -364,7 +351,7 @@ main {
 
 }
 
-/* Media query for very small devices (e.g., smartphones) */
+
 @media (max-width: 480px) {
     .header-container {
         overflow: auto; /* Enable scrolling if content overflows */
@@ -445,7 +432,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: 15px;
+        margin-bottom: -1000px;
     }
 
 
@@ -463,7 +450,7 @@ main {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .header-container {
         overflow: auto; /* Enable scrolling if content overflows */
     }
@@ -474,8 +461,8 @@ main {
     }
 
     .logo-image {
-        width: 50px; /* Reduce size */
-        margin-left: 270px;
+        width: 70px; /* Reduce size */
+        margin-left: 295px;
         margin-top: 3px;
     }
 
@@ -485,7 +472,105 @@ main {
     }
 
     .text-content h1 {
-        margin-left: -180px;
+        margin-left: -230px;
+        margin-top: -50px;
+    }
+
+    .text-content h2 {
+        margin-left: -100px;
+        margin-top: -10px;
+    }
+
+    .text-content p {
+        margin: 22px 25px 15px 0; /* Adjust margins */
+        font-size: 15.5px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .shop-now {
+        font-size: 18px; /* Smaller button font */
+        margin-bottom: 20px;
+    }
+
+    .social-icons img {
+        width: 40px; /* Smaller icon size */
+        height: 40px;
+    }
+
+    .shop-table {
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center table */
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 0; /* Reduce padding */
+        font-size: 12px; /* Smaller text for small screens */
+    }
+
+    .grid-item {
+        width: 100%; /* Full width of the container */
+        display: flex;
+        flex-direction: column; /* Stack image and info */
+        align-items: center; /* Center align */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .grid-item img {
+        width: 100%; /* Full width of the container */
+        height: 160px; /* Set a fixed height for uniformity */
+        object-fit: cover; /* Maintain aspect ratio and fill the area */
+        margin: 0; /* Remove margin */
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: -800px;
+    }
+
+
+    
+    .product-info h3 {
+        font-size: 16px; /* Smaller title font size */
+        margin-top: 0px;
+        
+    }
+
+    .product-info p {
+        font-size: 14px; /* Smaller price font size */
+        margin-left: 0px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container {
+        overflow: auto; /* Enable scrolling if content overflows */
+    }
+
+    .text-content {
+        overflow-y: auto; /* Allow vertical scrolling */
+        max-height: 70vh; /* Limit height to allow scrolling */
+    }
+
+    .logo-image {
+        width: 70px; /* Reduce size */
+        margin-left: 265px;
+        margin-top: 3px;
+    }
+
+    .text-content h1,
+    .text-content h2 {
+        font-size: 32px; /* Smaller font for both titles */
+    }
+
+    .text-content h1 {
+        margin-left: -200px;
         margin-top: -50px;
     }
 
@@ -504,6 +589,8 @@ main {
     .shop-now {
         font-size: 18px; /* Smaller button font */
         margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 135px;
     }
 
     .social-icons img {
@@ -560,31 +647,37 @@ main {
         height: 150px; /* Set a consistent height */
         object-fit: cover; /* Maintain aspect ratio and avoid distortion */
     }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: -800px;
+    }
 }
-
-
-
 
 @media (max-width: 361px) {
     
     .header-container {
-        overflow: auto;
+        overflow: auto; /* Enable scrolling if content overflows */
     }
 
     .text-content {
-        overflow-y: auto;
-        max-height: 90vh;
+        overflow-y: auto; /* Allow vertical scrolling */
+        max-height: 70vh; /* Limit height to allow scrolling */
     }
 
     .logo-image {
-        width: 50px;
+        width: 50px; /* Reduce size */
         margin-left: 250px;
         margin-top: 3px;
     }
 
     .text-content h1,
     .text-content h2 {
-        font-size: 32px;
+        font-size: 32px; /* Smaller font for both titles */
     }
 
     .text-content h1 {
@@ -598,25 +691,25 @@ main {
     }
 
     .text-content p {
-        margin: 22px 25px 15px 0;
+        margin: 22px 25px 15px 0; /* Adjust margins */
         font-size: 15.75px;
         line-height: 1.7;
         text-align: justify;
     }
 
     .shop-now {
-        font-size: 18px;
+        font-size: 18px; /* Smaller button font */
         margin-bottom: 20px;
     }
 
     .social-icons img {
-        width: 40px;
-        height: 40px;
+        width: 30px; /* Smaller icon size */
+        height: 30px;
     }
 
     .shop-table {
-        width: 100%; 
-        margin: 0 auto;
+        width: 100%; /* Full width */
+        margin: 0 auto; /* Center table */
     }
 
     .shop-table th,
@@ -625,8 +718,9 @@ main {
         font-size: 12px; /* Smaller text for small screens */
     }
     .grid-item {
-        width: 100%; /* Full width of the container */
-        padding: 0; /* Remove padding to maximize space */
+        width: 100%;
+        padding: 0;
+        margin-bottom: -100px;
     }
 
     .product-info {
@@ -652,5 +746,26 @@ main {
         width: 100%; /* Full width */
         height: 140px; /* Reduce image height to fit more content */
         object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: -700px;
+    }
+}
+
+@media (max-width: 330px) {
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+        gap: 0px; /* Adjust gap between items */
+        padding: 10px;
+        margin: 0 auto; /* Center the grid */
+        margin-bottom: -900px;
     }
 }
