@@ -33,11 +33,11 @@ html, body {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    margin: 0 auto; /* Center the grid */
     gap: 20px; 
     max-width: 1000px;
     width: 100%; 
     padding: 0; 
-    margin-left: 90px;
     margin-top: 20px;
     margin-bottom: -1000px;
 }
