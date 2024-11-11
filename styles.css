@@ -432,7 +432,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -1000px;
+        margin-bottom: -1050px;
     }
 
 
@@ -530,7 +530,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -800px;
+        margin-bottom: -850px;
     }
 
 
@@ -654,7 +654,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -800px;
+        margin-bottom: -850px;
     }
 }
 
@@ -754,7 +754,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -700px;
+        margin-bottom: -750px;
     }
 }
 
@@ -766,6 +766,6 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -900px;
+        margin-bottom: -950px;
     }
 }
