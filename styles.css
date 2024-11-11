@@ -754,7 +754,7 @@ main {
         gap: 0px; /* Adjust gap between items */
         padding: 10px;
         margin: 0 auto; /* Center the grid */
-        margin-bottom: -750px;
+        margin-bottom: -800px;
     }
 }
 
