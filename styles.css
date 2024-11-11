@@ -9,8 +9,8 @@ html, body {
 }
 
 .index-page {
-    height: auto; /* Allow height to adjust */
-    overflow-y: auto; /* Allow vertical scrolling */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .shop-page {
